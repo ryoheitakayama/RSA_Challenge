@@ -7,8 +7,8 @@ int main (void){
   int isPrime; //for HANTEI of prime
   int count = 3;  //for numbering of prime
   int n = 5;  //for natural numbers which are checked
-  int j = 3;  //for checking whether 'n' is the prime
-
+  int j;  //for checking whether 'n' is the prime
+  int a;
 
   printf("How many prime numbers are there before the prime you want?\n"); 
   scanf("%d",&i);
@@ -20,13 +20,12 @@ int main (void){
   else 
     while(count <= i+1){
       isPrime = 1;
-      j = 3;
-      while(j < sqrt(n)+1){
+      a = sqrt(n);
+      for(j = 3; j < a+1; j+=2){
         if(n % j == 0){
           isPrime = 0;
           break;
-        }else
-        j = j + 2;
+        }
       }
       
       if(isPrime){
