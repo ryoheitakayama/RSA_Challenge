@@ -8,7 +8,7 @@ int main (void){
   int count = 3;  //for numbering of prime
   int n = 5;  //for natural numbers which are checked
   int j;  //for checking whether 'n' is the prime
-  int a;
+  int a;  //for calculating sqrt of n
 
   printf("How many prime numbers are there before the prime you want?\n"); 
   scanf("%d",&i);
